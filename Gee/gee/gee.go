@@ -4,7 +4,7 @@ import (
 	"net/http"
 )
 
-type HandlerFunc func(w http.ResponseWriter, r *http.Request)
+type HandlerFunc func(ctx *Context)
 
 type Engine struct {
 	router *router
